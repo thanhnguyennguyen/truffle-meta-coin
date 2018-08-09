@@ -15,7 +15,7 @@
   },
   "scripts": {
     "test": "truffle test",
-    "coverage": "node_modules\\.bin\\testrpc-sc --port 8555 > /dev/null & node_modules\\.bin\\solidity-coverage SOLIDITY_COVERAGE=true"
+    "coverage": "./node_modules/.bin/testrpc-sc --port 8555 > /dev/null & ./node_modules/.bin/solidity-coverage"
   },
   "repository": {
     "type": "git",
