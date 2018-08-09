@@ -5,7 +5,6 @@ install:
     - npm install -g truffle
     - npm install -g solc
     - npm install solidity-coverage
-    - npm install ethereumjs-testrpc-sc
     - npm install codecov
 script:
     - ls ./node_modules/.bin
