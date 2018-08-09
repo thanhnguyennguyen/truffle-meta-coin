@@ -7,7 +7,7 @@
         - Ganache UI, download here https://github.com/trufflesuite/ganache/releases
         - Ganache CLI: 
              npm install -g ganache-cli 
-                , then run <code> ganache-cli</code> to start with default configuration
+                , then run ganache-cli to start with default configuration
            
             ganache: {
             host: "127.0.0.1",
