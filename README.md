@@ -2,8 +2,41 @@
 ## No network specified. Cannot determine current network
     - Install and start ganache server first https://truffleframework.com/docs/ganache/quickstart
     Basically, Ganache is a virtual ethereum network
+        - Ganache UI, download here https://github.com/trufflesuite/ganache/releases
+        - Ganache CLI: <code> npm install -g ganache-cli </code>, then run <code> ganache-cli</code> to start with default configuration
+            - <code>
+            ganache: {
+            host: "127.0.0.1",
+            port: 8545,
+            network_id: "*"
+            }
+            <code/>
+        - Use docker: <code>docker run -d -p 8545:8545 trufflesuite/ganache-cli:latest</code>
     - Then configue truffle.js file with Ganache host, port, network id
     - Run <code> truffle migrate --network ganache </code>
+## Deploy to customer network using Infura
+    - <code>npm install -g truffle-hdwallet-provider </code>
+    - Update truffle.js
+        - <code>
+            var HDWalletProvider = require("truffle-hdwallet-provider");
+            var mnemonic;
+            module.exports = {
+            networks: {
+                ganache: {
+                    host: "127.0.0.1",
+                    port: 8545,
+                    network_id: "5777"
+                },
+                // you can use mainnet or any other test networks
+                ropsten: {
+                    provider: function() {
+                        return new HDWalletProvider(mnemonic, "https://ropsten.infura.io/<INFURA_Access_Token>")
+                    },
+                    network_id: 3
+                }
+            }
+            };
+        </code>
 ## For Windows
 - Resolving naming conflicts on Windows
     - When using the Command Prompt on Windows, the default configuration file name can cause a conflict with the truffle executable, and so you may not be able to run Truffle commands properly on existing projects.
