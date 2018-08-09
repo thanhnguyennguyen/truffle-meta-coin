@@ -7,7 +7,7 @@ install:
     - npm install codecov
 script:
     - ls ./node_modules/.bin
-    - ls ././node_modules/
+    - ls ./node_modules/
     - npm run coverage
 after_success:
     - codecov
