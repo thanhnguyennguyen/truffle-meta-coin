@@ -2,8 +2,8 @@ language: node_js
 install:
     - npm install -g truffle
     - npm install -g solc@0.4.21
-    - npm install -g solidity-coverage
-    - npm install -g  ethereumjs-testrpc-sc
+    - npm install solidity-coverage
+    - npm install ethereumjs-testrpc-sc
     - npm install codecov
 script:
     - ls ./node_modules/.bin
