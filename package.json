@@ -17,8 +17,8 @@
   },
   "scripts": {
     "test": "truffle test",
-    "js_coverage": "nyc --reporter=text-lcov mocha> coverage.lcov",
-    "solidity_coverage": "./node_modules/.bin/solidity-coverage >> coverage.lcov"
+    "js-coverage": "nyc --reporter=text-lcov mocha> coverage.lcov",
+    "solidity-coverage": "./node_modules/.bin/solidity-coverage >> coverage.lcov"
   },
   "repository": {
     "type": "git",
