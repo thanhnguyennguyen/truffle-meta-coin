@@ -1,3 +1,5 @@
+# npm install -g truffle
+# https://truffleframework.com/docs/truffle
 # FAQ
 ## No network specified. Cannot determine current network
     - Install and start ganache server first https://truffleframework.com/docs/ganache/quickstart
