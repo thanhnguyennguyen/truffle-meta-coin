@@ -2,7 +2,7 @@ install:
     - npm install -g truffle
     - npm install -g solc@0.4.21
     - npm install -g solidity-coverage
-    - npm install -g testrpc-sc
+    - npm install -g  ethereumjs-testrpc-sc
     - npm install codecov
 script:
     - npm run coverage
