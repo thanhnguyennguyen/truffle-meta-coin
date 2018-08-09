@@ -1,4 +1,9 @@
 # npm install -g truffle
+# Unit test (Please never write code without tests)
+<code>truffle test</code>
+or <code> npm test </code>
+- Test coverage
+    - Solidity coverage: <code>npm run  solidity-coverage</code>
 # https://truffleframework.com/docs/truffle
 # FAQ
 ## No network specified. Cannot determine current network
@@ -51,3 +56,4 @@
         - Rename truffle.js to something else (truffle-config.js)
         - Use Windows PowerShell or Git BASH, as these shells do not have this conflict.
 
+# Copyright © 2018 Nguyen Nguyen
