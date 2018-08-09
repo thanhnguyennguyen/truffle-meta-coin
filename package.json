@@ -1,0 +1,34 @@
+{
+  "name": "truffle-meta-coin",
+  "version": "1.0.0",
+  "description": "using  truffle framework",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "solc": "^0.4.21",
+    "truffle": "^4.1.13"
+  },
+  "devDependencies": {
+    "solidity-coverage": "^0.5.7"
+  },
+  "scripts": {
+    "test": "truffle test",
+    "coverage": "node_modules\\.bin\\testrpc-sc --port 8555 > /dev/null & node_modules\\.bin\\solidity-coverage SOLIDITY_COVERAGE=true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thanhnguyennguyen/truffle-meta-coin.git"
+  },
+  "keywords": [
+    "truffle",
+    "nguyennguyen"
+  ],
+  "author": "Nguyen Nguyen (nguyenbk92@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thanhnguyennguyen/truffle-meta-coin/issues"
+  },
+  "homepage": "https://github.com/thanhnguyennguyen/truffle-meta-coin#readme"
+}

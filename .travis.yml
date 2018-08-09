@@ -1,4 +1,11 @@
 install:
     - npm install -g truffle
+    - npm install -g solc@0.4.21
+    - npm install -g solidity-coverage
+    - npm install -g testrpc-sc
+    - npm install codecov
 script:
-    - truffle test
+    - npm run coverage
+after_success:
+    - codecov
+
