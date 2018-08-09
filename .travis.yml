@@ -2,14 +2,11 @@ language: node_js
 node_js:
   - "8"
 install:
-    - npm install -g truffle
-    - npm install -g solc
-    - npm install solidity-coverage
+    - npm install
     - npm install codecov
 script:
-    - ls ./node_modules/.bin
-    - ls ./node_modules/
-    - npm run coverage
+    - npm run js-coverage
+    - npm run solidity-coverage
 after_success:
     - codecov
 
