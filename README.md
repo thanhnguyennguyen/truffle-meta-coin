@@ -20,9 +20,9 @@ or <code> npm test </code>
             network_id: "*"
             }
             
-        - Use docker: <code>docker run -d -p 8545:8545 trufflesuite/ganache-cli:latest</code>
+        - Use docker: docker run -d -p 8545:8545 trufflesuite/ganache-cli:latest
     - Then configue truffle.js file with Ganache host, port, network id
-    - Run <code> truffle migrate --network ganache </code>
+    - Run  truffle migrate --network ganache
 ## Deploy to customer network using Infura
     - npm install -g truffle-hdwallet-provider 
     - Update truffle.js
