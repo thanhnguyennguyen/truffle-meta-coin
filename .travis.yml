@@ -6,6 +6,8 @@ install:
     - npm install -g  ethereumjs-testrpc-sc
     - npm install codecov
 script:
+    - ls ./node_modules/.bin
+    - ls ././node_modules/
     - npm run coverage
 after_success:
     - codecov
